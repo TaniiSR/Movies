@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TrendyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/moBlueWithAHintOfPurple</item>
+        <item name="colorPrimaryVariant">@color/moBlueWithAHintOfPurpleTwo</item>
+        <item name="colorOnPrimary">@color/moBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/moTeal200</item>
+        <item name="colorSecondaryVariant">@color/moTeal700</item>
+        <item name="colorOnSecondary">@color/moBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="tbTitleStyle">@style/Movie.Widget.TextView.BlackColor.Large</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryDark">@color/moDarkSlateBlue</item>
+        <item name="android:colorBackground">@color/moBlack</item>
+
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:layoutDirection">ltr</item>
+
+        <!-- Start new activity animation slide in and slide out  -->
+        <item name="android:windowAnimationStyle">@style/taCustomActivityAnimation</item>
+        <!-- Text Colors -->
+        <item name="prefixTextColor">@color/moBlueWithAHintOfPurpleFaded</item>
+        <item name="hintTextColor">@color/moBlueGrey</item>
+        <item name="moGreyTextColor">@color/moGreyLight</item>
+        <item name="moWhiteColor">@color/moBlack</item>
+        <item name="moBlackColor">@color/moWhite</item>
+    </style>
+
+    <style name="taCustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <!-- specify enter and exit transitions -->
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="Movie.Widget.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="elevation">@dimen/mo_margin_extra_small</item>
+        <item name="itemTextAppearanceInactive">
+            @style/Movie.BottomNavigationView.TextAppearance.InActive
+        </item>
+        <item name="itemTextAppearanceActive">
+            @style/Movie.BottomNavigationView.TextAppearance.Active
+        </item>
+    </style>
+
+</resources>

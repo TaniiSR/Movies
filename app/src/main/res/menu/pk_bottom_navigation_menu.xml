@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard_nav_home"
+        android:icon="@drawable/mo_ic_dashboard"
+        android:title="@string/screen_dashboard_bottom_bar_dashboard_text" />
+    <item
+        android:id="@+id/dashboard_nav_watch"
+        android:icon="@drawable/mo_ic_watch"
+        android:title="@string/screen_dashboard_bottom_bar_watch_text" />
+    <item
+        android:id="@+id/dashboard_nav_media"
+        android:icon="@drawable/mo_ic_media"
+        android:title="@string/screen_dashboard_bottom_bar_media_text" />
+    <item
+        android:id="@+id/dashboard_nav_more"
+        android:icon="@drawable/mo_ic_more"
+        android:title="@string/screen_dashboard_bottom_bar_more_text" />
+
+</menu>

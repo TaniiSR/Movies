@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Movie.Widget.TextView.Black" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/Movie.TextAppearance.TextView</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/moBlackColor</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.White" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/Movie.TextAppearance.TextView</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/moWhiteColor</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="Movie.TextAppearance.TextView" parent="">
+        <item name="fontFamily">@font/mo_roboto_regular</item>
+        <item name="font">@font/mo_roboto_regular</item>
+        <item name="android:fontFamily">@font/mo_roboto_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/mo_roboto_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.Grey" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/Movie.TextAppearance.TextView</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/moGreyTextColor</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.BlackColor.XLarge" parent="Movie.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/mo_text_size_h3</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.BlackColor.Large" parent="Movie.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/mo_text_size_h5</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.BlackColor.Medium" parent="Movie.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/mo_text_size_h6</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.BlackColor.Small" parent="Movie.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/mo_text_size_h7</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.BlackColor.XSmall" parent="Movie.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/mo_text_size_h8</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.WhiteColor.Small" parent="Movie.Widget.TextView.White">
+        <item name="android:textSize">@dimen/mo_text_size_h7</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.WhiteColor.XSmall" parent="Movie.Widget.TextView.White">
+        <item name="android:textSize">@dimen/mo_text_size_h8</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.WhiteColor.XLarge" parent="Movie.Widget.TextView.White">
+        <item name="android:textSize">@dimen/mo_text_size_h3</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.WhiteColor.Large" parent="Movie.Widget.TextView.White">
+        <item name="android:textSize">@dimen/mo_text_size_h5</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.WhiteColor.Medium" parent="Movie.Widget.TextView.White">
+        <item name="android:textSize">@dimen/mo_text_size_h6</item>
+    </style>
+
+
+    <style name="Movie.Widget.TextView.GreyColor.XLarge" parent="Movie.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/mo_text_size_h3</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.GreyColor.Large" parent="Movie.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/mo_text_size_h5</item>
+    </style>
+
+    <style name="MovieWidget.TextView.GreyColor.Medium" parent="Movie.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/mo_text_size_h6</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.GreyColor.Small" parent="Movie.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/mo_text_size_h7</item>
+    </style>
+
+    <style name="Movie.Widget.TextView.GreyColor.XSmall" parent="Movie.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/mo_text_size_h8</item>
+    </style>
+
+    <style name="Movie.BottomNavigationView.TextAppearance.Active" parent="@style/Movie.TextAppearance.TextView">
+        <item name="fontFamily">@font/mo_roboto_regular</item>
+        <item name="android:fontFamily">@font/mo_roboto_regular</item>
+        <item name="android:color">@color/moWhite</item>
+        <item name="itemTextColor">@color/moWhite</item>
+        <item name="android:textSize">@dimen/mo_text_size_h8</item>
+    </style>
+
+    <style name="Movie.BottomNavigationView.TextAppearance.InActive" parent="">
+        <item name="fontFamily">@font/mo_roboto_regular</item>
+        <item name="android:fontFamily">@font/mo_roboto_regular</item>
+        <item name="android:color">@color/moWhite</item>
+        <item name="itemTextColor">@color/moWhite</item>
+        <item name="alpha">54</item>
+        <item name="android:textSize">@dimen/mo_text_size_h8</item>
+    </style>
+</resources>
