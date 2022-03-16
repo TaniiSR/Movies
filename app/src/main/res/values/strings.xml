@@ -4,6 +4,9 @@
     <string name="screen_dashboard_display_text_error">Something went wrong</string>
     <string name="screen_dashboard_display_text_error_description">An alien is probably blocking your signal</string>
     <string name="screen_dashboard_button_text_Retry">Retry</string>
+    <string name="screen_dashboard_button_text_watch_trailer">Watch Trailer</string>
+    <string name="screen_dashboard_button_text_get_tickets">Get Tickets</string>
+    <string name="screen_dashboard_button_text_release">In Theaters %1s</string>
     <string name="screen_dashboard_bottom_bar_dashboard_text">Dashboard</string>
     <string name="screen_dashboard_bottom_bar_watch_text">Watch</string>
     <string name="screen_dashboard_bottom_bar_media_text">Media Library</string>

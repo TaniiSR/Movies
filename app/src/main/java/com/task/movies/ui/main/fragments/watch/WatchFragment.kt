@@ -1,11 +1,13 @@
 package com.task.movies.ui.main.fragments.watch
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
 import com.task.movies.R
 import com.task.movies.data.dtos.responsedtos.UpcomingMovie
 import com.task.movies.databinding.FragmentWatchBinding
+import com.task.movies.ui.main.detail.DetailActivity
 import com.task.movies.utils.base.BaseFragment
 import com.task.movies.utils.base.interfaces.OnItemClickListener
 import com.task.movies.utils.base.sealed.UIEvent
@@ -70,10 +72,17 @@ class WatchFragment :
         override fun onItemClick(view: View, data: Any, pos: Int) {
             when (data) {
                 is UpcomingMovie -> {
-                    showToast("Detail Screen Open")
+                    openDetailActivity(data)
                 }
             }
         }
+    }
+
+    private fun openDetailActivity(data: UpcomingMovie) {
+        val intent = Intent(requireActivity(), DetailActivity::class.java)
+        intent.putExtra(DetailActivity::class.java.name, data)
+        startActivity(intent)
+
     }
 
     private fun handleUiState(uiEvent: UIEvent) {

@@ -89,7 +89,7 @@
                     android:gravity="center"
                     android:text="@string/screen_dashboard_display_text_error_description" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnRetry"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="match_parent"

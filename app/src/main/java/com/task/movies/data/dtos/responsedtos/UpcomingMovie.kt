@@ -1,10 +1,13 @@
 package com.task.movies.data.dtos.responsedtos
 
 
+import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @Entity(tableName = "upcoming_movie")
 data class UpcomingMovie(
     @PrimaryKey
@@ -36,4 +39,4 @@ data class UpcomingMovie(
     val voteAverage: String? = null,
     @SerializedName("vote_count")
     val voteCount: String? = null
-)
+) : Parcelable

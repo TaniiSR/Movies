@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.detail.DetailActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:alpha="0.2"
+        android:background="@color/moGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mo_margin_normal"
+        android:layout_marginTop="@dimen/mo_margin_normal"
+        android:src="@drawable/mo_ic_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvMovieName"
+        style="@style/Movie.Widget.TextView.WhiteColor.Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mo_margin_normal"
+        android:layout_marginEnd="@dimen/mo_margin_normal"
+        android:text="@string/screen_dashboard_bottom_bar_watch_text"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivBack"
+        app:layout_constraintTop_toTopOf="@id/ivBack"
+        tools:text="@string/screen_dashboard_bottom_bar_watch_text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWatch"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/mo_margin_large"
+        android:drawablePadding="100dp"
+        android:text="@string/screen_dashboard_button_text_watch_trailer"
+        android:textAllCaps="false"
+        android:textColor="@color/moWhite"
+        app:cornerRadius="8dp"
+        app:icon="@drawable/mo_ic_play"
+        app:iconGravity="textStart"
+        app:iconTint="@color/moWhite"
+        app:layout_constraintBottom_toBottomOf="@id/ivPoster"
+        app:layout_constraintEnd_toEndOf="@id/ivPoster"
+        app:layout_constraintStart_toStartOf="@id/ivPoster"
+        app:strokeColor="@android:color/holo_blue_bright" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTickets"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/mo_margin_small"
+        android:drawablePadding="100dp"
+        android:text="@string/screen_dashboard_button_text_get_tickets"
+        android:textAllCaps="false"
+        android:textColor="@color/moWhite"
+        app:backgroundTint="@android:color/holo_blue_bright"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btnWatch"
+        app:layout_constraintEnd_toEndOf="@id/ivPoster"
+        app:layout_constraintStart_toStartOf="@id/ivPoster"
+        app:strokeColor="@android:color/holo_blue_bright" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvRelease"
+        style="@style/Movie.Widget.TextView.WhiteColor.XLarge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mo_margin_normal"
+        android:layout_marginEnd="@dimen/mo_margin_normal"
+        android:layout_marginBottom="@dimen/mo_margin_normal"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnTickets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/screen_dashboard_bottom_bar_watch_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>
